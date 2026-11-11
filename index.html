@@ -5,7 +5,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build-version" content="2026-11-11-v6">
+<meta name="build-version" content="2026-11-10-v7">
 <meta name="theme-color" content="#080b18">
 <meta name="description" content="Ingenieros Asociados: estrategia digital, desarrollo de software, experiencias web e inteligencia artificial para empresas que quieren avanzar.">
 <title>Ingenieros Asociados | Diseñamos lo que sigue</title>
@@ -128,6 +128,77 @@ section{scroll-margin-top:90px}
 .planner-actions a{border:1px solid #d7ddec;border-radius:9px;padding:10px 13px;font-size:10px;font-weight:800;color:#4058e8}
 @media(max-width:800px){.planner-layout{grid-template-columns:1fr;gap:25px}}
 @media(max-width:600px){.showcase-grid{grid-template-columns:1fr}.showcase-card{min-height:245px}.planner-box{padding:18px}.planner-options{grid-template-columns:1fr 1fr}}
+
+/* Identidad visual clara inspirada en la referencia de Miami */
+:root{--night:#101d3b;--panel:#17284a;--panel2:#20365e;--white:#14213d;--muted:#66738b;--blue:#1769d2;--cyan:#20a8c3;--lime:#1769d2;--line:#dce3ee}
+body{background:#fff;color:#14213d}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid #e8edf4;box-shadow:0 4px 20px #10264b0a}
+.brand strong{color:#14213d}.brand small{color:#718099}
+.logo{background:linear-gradient(145deg,#287be3,#124aa8);border:0;box-shadow:0 8px 24px #1769d22b}
+.links{color:#43516b}.links a:hover{color:#1769d2}
+.navbtn,.btn{background:#1769d2;color:#fff;box-shadow:0 8px 22px #1769d229;border-radius:7px}
+.navbtn:hover,.btn:hover{background:#1056b4;box-shadow:0 14px 30px #1769d23b}
+.btn-outline{background:#fff;color:#17345d;border:1px solid #cbd6e5;box-shadow:none}
+.hero{background:linear-gradient(115deg,#fff 0%,#f5f8fd 57%,#eaf2fc 100%);color:#14213d}
+.hero .grid-bg{background-image:linear-gradient(#55739b0b 1px,transparent 1px),linear-gradient(90deg,#55739b0b 1px,transparent 1px)}
+.hero .eyebrow,.services .eyebrow,.courses .eyebrow,.process .eyebrow,.faq .eyebrow,.showcase .eyebrow,.planner .eyebrow{color:#1769d2}
+.hero h1{color:#12213e}
+.gradient{background:linear-gradient(100deg,#1769d2,#169cb5);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero-copy{color:#5e6c83}
+.hero-meta{color:#65738a}
+.hero-meta span:before{color:#1769d2}
+.hero-meta span{background:#fff;border:1px solid #e0e7f1;border-radius:30px;padding:9px 12px}
+.stage{background:#10254a url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85') center/cover no-repeat;border:1px solid #dce5f1;box-shadow:0 25px 65px #142d501c;border-radius:18px}
+.stage:before{background:linear-gradient(135deg,#10254a55,#10254a20 55%,#10254a70)}
+.stage .halo,.stage .ring,.stage .ai-core{display:none}
+.orbit-chip{background:#fff;border:1px solid #e1e8f2;box-shadow:0 15px 35px #10254a2b}
+.orbit-chip b{color:#14213d}.orbit-chip small{color:#66738b}
+.chip-icon{color:#1769d2}
+.ticker{background:#10254a;border-color:#10254a}
+.services,.courses,.process,.faq,.showcase{background:#f5f7fb;color:#14213d}
+.services .section-top p,.section-top p{color:#66738b}
+.service-card,.course{background:#fff;border:1px solid #e3e9f2;box-shadow:0 8px 25px #12213e08}
+.service-card:hover,.course:hover{border-color:#b8cdec;box-shadow:0 22px 45px #12213e14}
+.service-icon{background:#edf4ff;color:#1769d2}
+.service-card a{color:#1769d2}
+.about{background:#10254a;color:#fff}
+.about-art{background:#10254a url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85') center/cover no-repeat}
+.about-copy p{color:#c3cee0}.value{border-color:#ffffff30}.value span{color:#b4c1d6}
+.ai-section{background:#fff;color:#14213d}
+.ai-copy p,.ai-points div{color:#5e6c83}
+.ai-points i{color:#1769d2}
+.demo{background:#f4f7fc;border:1px solid #e1e8f2;box-shadow:0 20px 55px #14213e0e}
+.demo-head{border-color:#dce4ef}.demo-head b{color:#14213d}
+.prompt-options button{border-color:#dce4ef}.prompt-options button:hover,.prompt-options button.selected{border-color:#1769d2;background:#edf4ff}
+.demo-result{background:#eaf2ff;border-color:#d4e3fa;color:#334967}
+.demo-result strong{color:#1455a3}
+.demo-foot button{background:#1769d2}
+.course-art{background:linear-gradient(130deg,#143d75,#287be3)}
+.course:nth-child(2) .course-art{background:linear-gradient(130deg,#075c77,#1da5b8)}
+.course:nth-child(3) .course-art{background:linear-gradient(130deg,#263b68,#5579b7)}
+.step{border-color:#dce4ef}.step strong{color:#1769d2}.step p{color:#66738b}
+.faq-item{border-color:#e1e7f0}.faq-item[open]{border-color:#9dbce4}
+.faq-item summary:after{color:#1769d2}
+.showcase-card{background:#10254a}.showcase-card:nth-child(2){background:#12465d}.showcase-card:nth-child(3){background:#253c68}.showcase-card:nth-child(4){background:#1d3454}
+.showcase-card a{color:#9fe4ef}
+.planner{background:#eef3fa;color:#14213d}.planner-box{box-shadow:0 20px 50px #14213e0d}
+.planner-options button.active{border-color:#1769d2;background:#edf4ff}
+.planner-output{background:#10254a}.planner-output b{color:#8fd9ee}
+.planner-actions button{background:#1769d2}.planner-actions a{color:#1769d2}
+.contact{background:linear-gradient(125deg,#10254a,#173c70);color:#fff}
+.contact-copy p{color:#c5d1e3}
+.contact-form{background:#fff;border:1px solid #ffffff60;box-shadow:0 25px 65px #07152d55}
+.field label{color:#43516b}
+.field input,.field textarea,.field select{background:#f8fafd;border:1px solid #dce4ef;color:#14213d}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:#1769d2}
+.form-note{color:#718099}
+.chat-launch{background:#1769d2;color:#fff;box-shadow:0 12px 30px #10254a44}
+.chat-head{background:#10254a}
+.top-link{border-color:#dce4ef;color:#1769d2}
+footer{background:#0c1b35;border-color:#263d60}
+.footer-row p{color:#aab9d0}.footer-links{color:#d3dceb}
+@media(max-width:640px){.links{background:#fff}.links a{color:#253b5e}.hero{background:linear-gradient(150deg,#fff,#eef4fc)}.hero h1{color:#14213d}.stage{height:350px;transform:none}.btn-outline{color:#17345d}}
+
 </style>
 </head>
 <body><a class="skip-link" href="#contenido">Saltar al contenido</a><div class="noise"></div>
