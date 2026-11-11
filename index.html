@@ -155,6 +155,23 @@ footer{background:#061d46;padding:40px 0}
 .whatsapp-float:hover{transform:translateY(-4px);box-shadow:0 16px 36px #062a2460}
 .whatsapp-float svg{width:27px;height:27px;fill:currentColor;flex:none;display:block}
 @media(max-width:640px){.whatsapp-float{right:16px!important;bottom:16px!important;padding:14px;width:58px;height:58px;border-radius:50%;justify-content:center}.whatsapp-float span{display:none}.whatsapp-float svg{width:29px;height:29px}}
+
+/* IDENTIDAD DE COLOR PARA CADA SERVICIO */
+.service-card{position:relative;overflow:hidden;border-top:5px solid var(--service-color);background:var(--service-bg)}
+.service-card:before{content:"";position:absolute;right:-38px;top:-42px;width:125px;height:125px;border-radius:50%;background:var(--service-glow);pointer-events:none}
+.service-card .service-icon{position:relative;z-index:1;background:var(--service-color);color:#fff;box-shadow:0 10px 24px var(--service-shadow)}
+.service-card h3{position:relative}
+.service-card p,.service-card ul,.service-card .service-link{position:relative}
+.service-card .service-link{color:var(--service-color);border-color:var(--service-color)}
+.service-card:hover{border-color:var(--service-color);box-shadow:0 22px 48px var(--service-shadow)}
+.service-card:nth-child(1){--service-color:#1769f5;--service-bg:#f0f6ff;--service-glow:#1769f51c;--service-shadow:#1769f52b}
+.service-card:nth-child(2){--service-color:#8b42e8;--service-bg:#f7f1ff;--service-glow:#8b42e81c;--service-shadow:#8b42e82b}
+.service-card:nth-child(3){--service-color:#00a99a;--service-bg:#edfbf8;--service-glow:#00a99a1c;--service-shadow:#00a99a2b}
+.service-card:nth-child(4){--service-color:#f07824;--service-bg:#fff5ec;--service-glow:#f078241c;--service-shadow:#f078242b}
+.service-card:nth-child(5){--service-color:#e44883;--service-bg:#fff1f6;--service-glow:#e448831c;--service-shadow:#e448832b}
+.service-card:nth-child(6){--service-color:#c28a08;--service-bg:#fff9e9;--service-glow:#c28a081c;--service-shadow:#c28a082b}
+@media(max-width:640px){.service-card{border-top-width:4px}}
+
 </style>
 </head>
 <body>
