@@ -149,6 +149,12 @@ footer{background:#061d46;padding:40px 0}
 .chat-body button{font-size:13px;padding:12px}
 @media(max-width:900px){.hero{padding:75px 0 65px}.hero h1{font-size:54px}.hero-copy{font-size:17px}.service-card{min-height:0}}
 @media(max-width:640px){header{height:74px}.nav-links{top:74px}.hero{padding:60px 0 48px}.hero h1{font-size:43px;letter-spacing:-2px}.hero-copy{font-size:16px}.hero-visual{min-height:330px}.photo-caption strong{font-size:22px}.trust-item{font-size:12px}.section-head h2{font-size:35px}.section-head p{font-size:16px}.service-card{padding:26px 23px}.service-card h3{font-size:21px}.service-card p{font-size:15px}.service-card ul{font-size:14px}.about-copy h2,.contact-copy h2{font-size:35px}.about-copy p,.contact-copy p{font-size:15px}.ai-band h2{font-size:33px}.ai-band p{font-size:15px}.contact-form{padding:22px}.field label{font-size:13px}.field input,.field select,.field textarea{font-size:15px}}
+
+/* WhatsApp flotante */
+.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:9999;display:flex;align-items:center;gap:11px;padding:13px 19px 13px 14px;border-radius:999px;background:#20c767;color:#fff!important;text-decoration:none!important;font-weight:800;font-size:14px;box-shadow:0 12px 32px #062a2450;transition:transform .2s,box-shadow .2s}
+.whatsapp-float:hover{transform:translateY(-4px);box-shadow:0 16px 36px #062a2460}
+.whatsapp-float svg{width:25px;height:25px;fill:currentColor;flex:none}
+@media(max-width:640px){.whatsapp-float{right:16px;bottom:16px;padding:14px;border-radius:50%;width:56px;height:56px;justify-content:center}.whatsapp-float span{display:none}.whatsapp-float svg{width:27px;height:27px}}
 </style>
 </head>
 <body>
@@ -199,4 +205,4 @@ const chatBox=document.getElementById('chatBox'),chatBody=document.getElementByI
 document.querySelectorAll('[data-chat]').forEach(b=>b.addEventListener('click',()=>{const q=b.dataset.chat;chatBody.textContent='Has elegido: '+q+'. Podemos orientarte sobre esa solución. Déjanos tus datos en el formulario de contacto para continuar.';}));
 document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const subject=encodeURIComponent('Consulta web | Ingenieros Asociados');const body=encodeURIComponent('Nombre: '+d.get('name')+'\nCorreo: '+d.get('email')+'\nInterés: '+d.get('interest')+'\nMensaje: '+d.get('message'));document.getElementById('formNote').textContent='Se abrirá tu aplicación de correo. Revisa el mensaje y envíalo desde allí.';window.location.href='mailto:?subject='+subject+'&body='+body;});
 </script>
-</body></html>
+<a class="whatsapp-float" href="https://wa.me/573116950058?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Ingenieros%20Asociados." target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .8A15.1 15.1 0 0 0 3.05 23.7L1 31l7.48-1.96A15.2 15.2 0 1 0 16 .8Zm0 27.65c-2.3 0-4.55-.62-6.5-1.8l-.47-.28-4.44 1.16 1.18-4.33-.3-.48A12.48 12.48 0 1 1 16 28.45Zm6.85-9.35c-.38-.19-2.23-1.1-2.58-1.22-.35-.13-.6-.19-.85.19-.25.37-.98 1.22-1.2 1.47-.22.25-.44.28-.82.1-.38-.2-1.6-.6-3.04-1.9-1.12-1-1.88-2.24-2.1-2.62-.22-.37-.02-.58.17-.77.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.12-.25.06-.47-.03-.66-.1-.19-.85-2.04-1.17-2.8-.31-.74-.63-.64-.85-.65h-.73c-.25 0-.66.1-1.01.47-.35.38-1.33 1.3-1.33 3.15s1.36 3.65 1.55 3.9c.19.25 2.67 4.08 6.47 5.72.9.39 1.6.62 2.14.79.9.29 1.72.25 2.37.15.72-.1 2.23-.91 2.55-1.79.31-.88.31-1.63.22-1.79-.1-.16-.35-.25-.73-.44Z"/></svg><span>Hablemos por WhatsApp</span></a></body></html>
